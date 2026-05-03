@@ -1,0 +1,39 @@
+#a-z{
+  width: 100%;
+  min-height: 100vh;
+  padding: 32px;
+  background-color: #557376;
+}
+
+.home{
+
+  cursor: pointer;
+  background-color: white;
+  width: 100%;
+  margin-top: -16px;
+  margin-bottom: 16px;
+  color:  #557376;;
+  text-align: center;
+  font-weight: 700;
+}
+
+.header{
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 32px;
+
+}
+
+.intro{
+  margin-bottom: 32px;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+}
+
+.click{
+  text-decoration: underline;
+  color: white;
+}

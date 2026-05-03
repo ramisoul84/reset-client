@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --text-color: #fff;
+  
+    /* Spacing */
+    --spacing-xs: 42px;
+    --spacing-sm: 48px;
+    --spacing-md: 64px;
+    --spacing-lg: 96px;
+    --spacing-xl: 128px;
+    --spacing-xxl: 164px;
+    
+     /* Decorative */
+    --decorative-height-xs:100px;
+    --decorative-height-sm:120px;
+    --decorative-height-md:140px;
+    --decorative-height-lg:200px;
+    --decorative-height-xl:220px;
+    --decorative-height-xxl:240px;
+
+    /* Fonts */
+    --font-main: "Montserrat", serif;
+    --font-size-xs: 14px;
+    --font-size-sm: 16px;
+    --font-size-md: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 22px;
+    --font-size-xxl: 24px;
+
+    /* Menu */
+    --menu-size-xs: 28px;
+    --menu-size-sm: 30px;
+    --menu-size-md: 32px;
+    --menu-size-lg: 38px;
+    --menu-size-xl: 44px;
+    --menu-size-xxl: 50px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: var(--font-size-xs); 
+}
+
+body{
+    font-family: var(--font-main);
+    color:var(--text-color);
+}
+
+img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.text{
+    font-size: 1rem;
+    text-align:left;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+
+section{
+    padding: 0 var(--spacing-xs);
+}
+
+article{
+    margin-bottom: 4rem;
+}
+
+
+
+/* Small (sm) - 576px */
+@media (min-width: 576px) { 
+    html{
+        font-size: var(--font-size-sm); 
+    }
+    section{
+        padding: 0 var(--spacing-sm);
+    }
+}
+
+/* Medium (md) - 768px */
+@media (min-width: 768px) { 
+    html{
+        font-size: var(--font-size-md); 
+    }
+    section{
+        padding: 0 var(--spacing-md);
+    }
+}
+
+/* Large (lg) - 992px */
+@media (min-width: 992px) {
+    html{
+        font-size: var(--font-size-lg); 
+    }
+    section{
+        padding: 0 var(--spacing-lg);
+    }
+ }
+
+/* Extra Large (xl) - 1200px */
+@media (min-width: 1200px) { 
+    html{
+        font-size: var(--font-size-xl); 
+    }
+    section{
+        padding: 0 var(--spacing-xl);
+    }
+}
+
+/* XX-Large (xxl) - 1400px */
+@media (min-width: 1400px) {
+    html{
+        font-size: var(--font-size-xxl); 
+    }
+    section{
+        padding: 0 var(--spacing-xxl);
+    }
+}

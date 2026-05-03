@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header" (click)="toggle()">
+    <div class="card-header-title">{{title}}</div>
+    <div class="card-header-icon" [ngClass]="{expanded:expanded}">+</div>
+  </div>
+  
+  <div 
+    class="card-body"
+    [@expandCollapse]="expanded ? 'expanded' : 'collapsed'"
+  >
+    <div class="card-content" [innerHTML]="_content">
+
+    </div>
+  </div>
+</div>

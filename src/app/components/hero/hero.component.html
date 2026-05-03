@@ -1,0 +1,63 @@
+<div id="hero">
+    <div class="loading" *ngIf="!isLoaded">
+        <div class="spinner"></div>
+        loading ..     
+    </div>
+    <div class="hero-bg">
+        <div class="hero-ornament-container">
+            <img src="assets/images/decorative/ornament_1600.jpg" alt="ornament image" (load)="onImageLoad()"> 
+            <div  class="hero-reset">
+                <ng-lottie
+                [options]="resetHeroOptions"
+                 />     
+                <img src="assets/images/date.png" alt="" class="hero-date">  
+            </div> 
+        </div>   
+        <div class="hero-img-wrapper" #heroImgWrapper >
+            <div class="watch" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="play" viewBox="0 0 10 12"   data-aos="fade-right">
+                    <path d="M0 0 L10 6 L0 12 Z"/>
+                </svg>
+                <p data-aos="fade-right">WATCH</p>
+                <p   data-aos="fade-right"   data-aos-delay="300">PROMO</p>
+            </div>              
+            <picture>
+                <source media="(min-width: 600px)" srcset="assets/images/sections/promo_1600.png">
+                <img id="hero-img" 
+                     src="assets/images/sections/promo_600.png" 
+                     alt="promo image" 
+                     class="hover-target" 
+                     data-circle-size="120" 
+                     data-text="PLAY PROMO" 
+                     (click)="playPause()" 
+                     (click)="openExternalPage('https://www.youtube.com/watch?v=CkGoOTculk0')" 
+                     (load)="onImageLoad()">
+              </picture>
+        </div>    
+    </div>
+
+
+    <section id="mission-section" class="mission-section">
+        <div class="mission" data-aos="fade-up">
+            <img src="assets/images/decorative/mission.svg" alt="decorative" class="mission-decorative1">
+            <p class="mission-title">OUR MISSION</p>
+            <img src="assets/images/decorative/mission.svg" alt="decorative" class="mission-decorative2">
+        </div>
+        <div class="text" data-aos="fade-up">
+            <p class="moto">“When the rhythm and the melody align, a truth emerges that words cannot capture.”
+                <b>Rumi</b>
+            </p>
+            <br/><br/>
+            At RE:SET, we invite you to step into a week-long immersive odyssey - a space where the familiar fades, intuition sharpens, and surrealism, novelty, and joy take the lead. Through curiosity, wonder, and play, you awaken the courageous spirit buried beneath daily life.<br/><br/>
+            In a world that feels detached and rigid, we create a sanctuary where creativity thrives and self-expression is celebrated. When rhythm - the pulse, the heartbeat, the people - moves in harmony with melody - the energy, the atmosphere, the unspoken language of the space - truth emerges.<br/><br/>
+            When you feel both supported and free, at ease yet inspired, you step into the fullness of who you were always meant to be. You RE:SET.
+            <br/><br/>
+        </div>
+        <div class="more hover-target" routerLink="/mission-values"  data-aos="fade-up"
+        data-circle-size="60" 
+        data-text="info" 
+        > What is RE:SET Festival?</div>
+        <img  src="assets/images/decorative/stripe.svg" alt="decorative" class="stripe" data-aos="fade-up">
+    </section>
+
+</div>

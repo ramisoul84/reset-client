@@ -1,0 +1,30 @@
+.wellness{
+    color: black;
+    padding: 32px;
+}
+
+.home{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.home:hover{
+    text-decoration: underline;
+}
+
+.wellness-title{
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+ul{
+    text-decoration: none;
+    padding-left: 16px;
+}
+
+li{
+    padding-bottom: 6px;
+}
+

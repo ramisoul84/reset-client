@@ -1,0 +1,132 @@
+#admin{
+  min-height: 100vh;
+  background-color: #db8a08;
+  padding: 12px;
+}
+
+.logout{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.home{
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+form{
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  gap: 32px;
+}
+
+input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 24px;
+}
+
+input::placeholder{
+  color: lightgray;
+}
+
+.submit{
+  padding: 12px;
+  max-width: 200px;
+}
+
+input{
+  padding: 12px;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.card{
+  background-color: #557376;
+  padding: 16px;
+}
+
+.card-title{
+  color: black;
+}
+
+.card-value{
+  font-weight: 700;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px ;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse; 
+  margin-top: 16px;
+  font-size: 10px;
+  margin: 0 auto;
+  border: 2px solid white;
+}
+ th {
+	font-weight: bold;
+	padding: 5px;
+	background: #557376;
+  border-bottom: 2px solid white;
+}
+td {
+  width: 100%;
+	padding: 5px;
+  text-align: center;
+
+}
+
+thead,tr{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+tr{
+  width: 100%;
+  background-color: #3e3e3e;
+}
+
+
+.pages{
+  display: flex;
+  color: black;
+  gap: 6px;
+  font-size: 18px;
+}
+
+.page{
+  cursor: pointer;
+}
+
+.selected{
+  text-decoration: underline;
+}
+
+.download{
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #557376;;
+  border: 2px solid white;
+  cursor: pointer;
+}

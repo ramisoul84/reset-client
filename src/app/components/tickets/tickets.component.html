@@ -1,0 +1,29 @@
+<div id="tickets">
+    <section>
+        <div class="tickets-header" data-aos="fade-up" >
+            <div class="lottie-wrapper hover-target"  (click)="openExternalPage('https://tunis.events/en/collectives/3bpo7k')" data-circle-size="200" data-text="BUY TICKETS">
+                <ng-lottie
+                    class="lott"
+                    [options]="ticketsOptions"
+                />
+            </div>       
+        </div>
+        <div class="tickets-body">
+            <article data-aos="fade-up">
+                <p class="title">AWARENESS</p>
+                <p class="text">
+                    At RE:SET, we believe that true transformation begins with awareness. Our festival is a sanctuary for mindful exploration, where each beat and rhythm serves as a catalyst for heightened consciousness. 
+                </p>
+            </article>
+            <article data-aos="fade-up">
+                <p class="title">SUSTAINABILITY</p>
+                <p class="text">
+                    RE:SET is committed to reimagining the festival experience through the lens of sustainability. We view our gathering as an opportunity to showcase innovative eco-friendly practices and inspire long-lasting change. 
+                </p>
+            </article>
+        </div>
+        <div class="more" routerLink="/awareness-sustainability">
+            more..
+        </div>
+    </section>
+</div>

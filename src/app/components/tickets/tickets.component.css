@@ -1,0 +1,55 @@
+#tickets{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.more{
+    text-align: right;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: -32px;
+    margin-bottom: 32px;
+}
+
+
+.tickets-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.lottie-wrapper{
+    width: 60%;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+.lott{
+    pointer-events: none;
+}
+
+.tickets-decorative{
+    width: 200px;
+    transform: rotate(180deg);
+}
+
+@media (min-width: 768px) { 
+    .tickets-body{
+        display: flex;
+        gap: 32px;
+    }
+}
+
+
+
+@media (min-width: 1200px) { 
+    .tickets-header{
+        font-size: 96px;
+        margin: 64px 0;
+    }
+    
+    .tickets-decorative{
+        width: 400px;
+    }
+}

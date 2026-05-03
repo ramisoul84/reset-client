@@ -1,0 +1,19 @@
+<div class="section-picture-wrapper" data-aos="fade-up">
+    <picture>
+        <source media="(min-width: 600px)" [srcset]="src">
+        <img id="hero-img" 
+             [src]="src_600" >
+      </picture>
+    <img *ngIf="rightBottom" [src]="rightBottom" alt="Section Decorative" class="right-bottom">
+    <img *ngIf="leftTop" [src]="leftTop" alt="Section Decorative" class="left-top">
+</div>
+
+
+
+<!--
+    <div class="section-picture-wrapper" data-aos="fade-up">
+    <img [src]="src" alt="Section Picture" >
+    <img *ngIf="rightBottom" [src]="rightBottom" alt="Section Decorative" class="right-bottom">
+    <img *ngIf="leftTop" [src]="leftTop" alt="Section Decorative" class="left-top">
+</div>
+-->

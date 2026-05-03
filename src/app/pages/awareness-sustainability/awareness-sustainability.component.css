@@ -1,0 +1,20 @@
+.awareness{
+    padding: 32px;
+    color: black;
+}
+
+.awareness-title{
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+
+.home{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.home:hover{
+    text-decoration: underline;
+}

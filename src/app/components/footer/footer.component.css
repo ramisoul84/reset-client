@@ -1,0 +1,173 @@
+footer{
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.az{
+    margin-bottom: 96px;
+    cursor: pointer;
+}
+
+.msg-wrapper{
+    height: 60px;
+}
+.message{
+    width: fit-content;
+    margin: 0 auto;
+    z-index: 2;
+    background-color: tomato;
+    padding: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 36px;
+    padding-bottom: 36px;
+
+}
+
+.see{
+    text-align: center;
+    font-weight: 700;
+}
+
+.wave{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+.footer-form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column; 
+    gap: 16px;
+}
+
+input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+  }
+
+input::placeholder{
+    color: lightgray;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+input{
+    padding: 6px;
+}
+.name{
+    width: 100%;
+}
+.join {    
+    all: unset;
+    margin-top: 1em;
+    background: transparent;
+    border: 2px solid white;
+    padding: 1em 4em;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+
+}
+
+
+
+
+
+
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.btn{
+    border: none;
+    border: 2px solid white;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.location{
+    fill: white;
+    padding: 10px;
+    
+}
+.location svg{
+    pointer-events: none;
+}
+.btn img{
+    width: 100%;
+}
+.btn:disabled{
+    background-color: gray;
+    color: lightgray;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 0;
+}
+
+.actions a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) { 
+    .actions{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 1200px) { 
+    .see{
+        font-size: 36px;
+    }
+}

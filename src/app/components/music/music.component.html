@@ -1,0 +1,62 @@
+<div id="music">
+    <app-section-picture
+        id="music-img"
+        [src]="'assets/images/sections/music.png'"
+        [src_600]="'assets/images/sections/music_600.png'"
+        [rightBottom]="'assets/images/decorative/music.svg'">
+    </app-section-picture>
+    <section>
+        <p  class="title" data-aos="fade-up">Djerba’s Beat, Your Heart’s Pulse</p>
+        <article data-aos="fade-up">
+            <div class="text">
+                The music at RE:SET is a journey – one that mirrors the island’s energy, from the sun-soaked afternoons to the starry, rhythmic nights. Our soundscape weaves together groovy house beats, deep, hypnotic techno, and soulful minimal rhythms, all designed to carry you deeper into the moment.
+            </div>
+            <div class="music-img-text-wrapper">
+                <img src="assets/images/music_sm.png" alt="music Image" class="music-img" >
+                <p class="text" >
+                    By day, let the ambient waves and local sounds invite you to explore Djerba’s vibrant culture. By night, lose yourself in the energy of underground icons and visionary artists, each performance a celebration of creativity and connection.<br/><br/>It’s an invitation to breathe with the island, to feel its pulse, and to let the music guide your journey.
+                </p>
+            </div> 
+        </article>
+        <div class="lineup">
+            <div class="lineup-title" [style.backgroundColor]="color">
+                <ng-lottie
+                class="lineup-lottie"
+                [options]="lineupOptions"
+                />            
+            </div>
+            <div class="ph1">
+                DJ LINEUP RELEASE – PHASE ONE.
+             </div>
+            <div class="cards">
+            <app-music-card *ngFor="let dj of djs" 
+                [id]="dj.name"
+                [name]="dj.name" 
+                [info]="dj.info" 
+                [info2]="dj.info2"
+                [insta]="dj.insta"  
+                [insta2]="dj.insta2"
+                [sound]="dj.sound" 
+                [sound2]="dj.sound2" 
+                [src]="dj.img" 
+                [src2]="dj.img2" 
+            ></app-music-card>
+            </div>
+        </div>
+        <div class="partners">
+            <p class="title" data-aos="fade-up">OUR PARTNERS</p>
+            <div class="icons">
+                <a href="https://www.instagram.com/actitude.berlin/" target="_blank" data-aos="fade-up">
+                    <img class="icon hover-target" src="assets/images/partners/m1.png"  data-circle-size="100" data-text="OPEN LINK" >
+                </a>
+                <a href="https://www.instagram.com/smallgreatthingslabel/?hl=en" target="_blank" data-aos="fade-up" data-aos-duration="500">
+                    <img class="icon hover-target" src="assets/images/partners/m2.png"  data-circle-size="100" data-text="OPEN LINK" >
+                </a>
+                <a href="https://www.instagram.com/association_of_unison/?hl=en" target="_blank" data-aos="fade-up" data-aos-duration="1000">
+                    <img class="icon hover-target" src="assets/images/partners/m3.png"  data-circle-size="100" data-text="OPEN LINK" >
+                </a>
+            </div>
+            <p class="more text" data-aos="fade-right" data-aos-duration="1500">and many more...</p>
+        </div>
+    </section>   
+</div>

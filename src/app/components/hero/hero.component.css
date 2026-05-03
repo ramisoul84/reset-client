@@ -1,0 +1,300 @@
+#hero{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.more{
+    text-decoration: underline;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background:
+    linear-gradient(217deg, rgba(85,115,118, 1), rgba(85,115,118, 0) 70.71%),
+    linear-gradient(127deg, rgba(219,138,8, 1), rgba(219,138,8, 0) 70.71%),
+    linear-gradient(336deg, rgba(230,55,4, 1), rgba(230,55,4, 0) 70.71%),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #4285F4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.main{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.main-reset{
+    position: absolute;
+    top: 14%;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-lottie{
+    width: 54%;
+}
+
+.hero-bg{
+    background-color: #fff;
+     position: relative;
+}
+
+.hero-ornament-container{
+    width: auto;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.hero-reset{
+    position: absolute;
+    width: 58vw; 
+    margin-top: 4%;
+    height: auto;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-date{
+        width: 20vw;  
+}
+
+.hero-img-wrapper{
+    margin-top: -10vw;
+    margin-bottom: calc(var(--decorative-height-xs) / 2);
+    position: relative;
+}
+.video-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+}
+
+.video{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+
+}
+
+.sound{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    cursor: pointer;
+}
+
+.sound-on{
+    width: 32px;
+    fill: white;
+}
+
+.stop{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    cursor: pointer;
+   
+}
+
+.stop-icon{
+    width: 32px;
+    fill: white;
+}
+
+.hero-img-wrapper .play{
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+} 
+
+.watch{
+    position: absolute;
+    bottom: 1rem;
+    left: 40px;
+    font-weight: 700;
+    pointer-events: none;
+
+    }
+
+    .play{
+        width: 40px;
+        fill:white;
+    }
+
+
+.mission{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 32px;
+
+}
+
+.mission-title{
+    font-size: 18px;
+    font-weight: 700;
+    width: fit-content;
+
+}
+
+.mission-decorative1{
+    width:  18px;
+    transform: rotate(180deg);
+}
+
+.mission-decorative2{
+    width:  18px;
+}
+
+.moto{
+    font-style: italic;
+}
+
+.stripe{
+    margin: 0 auto;
+    width: 100%;
+    margin-top:  calc(var(--decorative-height-xs) / 2);
+}
+
+
+@media (min-width: 576px) { 
+
+    .hero-img-wrapper{
+        margin-bottom: calc(var(--decorative-height-sm) / 2);
+    }    
+    .stripe{
+        margin-top:  calc(var(--decorative-height-sm) / 2);
+    }
+}
+
+@media (min-width: 768px) { 
+    .hero-img-wrapper{
+        margin-bottom: calc(var(--decorative-height-md) / 2);
+    }    
+    .stripe{
+        margin-top:  calc(var(--decorative-height-md) / 2);
+    }
+}
+
+@media (min-width: 992px) { 
+    .hero-img-wrapper{
+        margin-bottom: calc(var(--decorative-height-lg) / 2);
+    }    
+    .stripe{
+        margin-top:  calc(var(--decorative-height-lg) / 2);
+    }
+}
+
+
+@media (min-width: 1200px) { 
+    .hero-img-wrapper{
+        margin-bottom: calc(var(--decorative-height-xl) / 2);
+    } 
+
+    .hero-reset{
+        max-width: 800px; 
+    }
+    .hero-date{
+        max-width: 260px; 
+    }
+    .mission{
+        gap: 6px;
+        margin-bottom: 48px;
+    }
+    
+    .mission-title{
+        font-size: 36px;
+    }
+    
+    .mission-decorative1{
+        width:  36px;
+    }
+    
+    .mission-decorative2{
+        width:  36px;
+    }
+
+    .stripe{
+        width: 80%;
+        margin-top:  calc(var(--decorative-height-xl) / 2);
+    }
+}
+
+
+@media (min-width: 1400px) { 
+    .hero-img-wrapper{
+        margin-top: -140px;
+        margin-bottom: calc(var(--decorative-height-xxl) / 2);
+    }   
+    .stripe{
+        margin-top:  calc(var(--decorative-height-xxl) / 2);
+    }
+}
+
+
+@keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }

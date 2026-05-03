@@ -1,0 +1,38 @@
+.mission-values{
+    color: black;
+    padding: 32px;
+}
+
+.home{
+    cursor: pointer;
+    text-align: center;
+    margin-top: -16px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+}
+
+.home:hover{
+    text-decoration: underline;
+}
+
+
+.mission-header{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.mission-title{
+    font-weight: 700;
+}
+
+.mission-text{
+  text-align: justify;
+  margin-bottom: 16px;
+}
+
+.bold{
+    font-weight: 700;
+}

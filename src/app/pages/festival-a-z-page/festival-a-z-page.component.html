@@ -1,0 +1,20 @@
+ <div id="a-z">
+  <div class="home" routerLink="/home">
+    HOME PAGE
+  </div>
+  <div class="header">
+    RE:SET Festival from A to Z
+  </div>
+  <div class="intro">
+    Here you can find answers to most of your questions about how things work at the RE:SET Festival.<br/> Please read through before attending the festival (or even before buying the ticket) to avoid any misunderstanding and to properly prepare for the best festival experience.<br/> 
+    Parts of the festival are not considered ready yet – stay excited about regular updates.<br/>
+    If you still have questions, don't hesitate to contact us through social media or send an email to seeyou&commat;reset-festival.com.<br/>
+    Welcome to the RE:SET Festival most important information! This guide provides everything to enhance your festival experience.<br/> We recommend reading it thoroughly before purchasing tickets or attending the event to ensure you’re well-prepared and to prevent any misunderstandings
+
+  </div>
+  <div class="cards">
+    <app-card *ngFor="let card of cards" [title]="card.title" [content]="card.content" >
+      {{card.content}}
+    </app-card>
+  </div>
+ </div>

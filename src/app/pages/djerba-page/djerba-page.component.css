@@ -1,0 +1,63 @@
+#djerba{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #557376;
+}
+
+.home{
+    width: fit-content;
+    padding: 8px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+
+}
+
+.home:hover{
+    text-decoration: underline;
+}
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 6px;
+}
+
+.gallery img{
+    cursor: pointer;
+}
+
+
+
+.close{
+    position: absolute;
+    left: 16px;
+    top:16px;
+    fill:tomato;
+    width:32px;
+    cursor: pointer;
+}
+
+.image{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.image img{
+   
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media (min-width:1200px){
+    .gallery{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 6px;
+    }
+}

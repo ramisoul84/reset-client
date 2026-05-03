@@ -1,0 +1,76 @@
+#fashion{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.fashion-wrapper{
+    overflow:auto;
+}
+
+.fashion-images{
+    width: 50%;
+    border: 2px solid white;
+    float: right;
+    margin-left: 20px; 
+    margin-bottom: 10px; 
+}
+
+.fullscreen{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: 24px;
+    z-index: 2;
+    fill: white;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+
+
+.icon{
+
+    cursor: pointer;
+}
+
+.marmol{
+    padding: 0 22%;
+}
+
+.more{
+    font-style: italic;
+    text-align: right;
+    font-size: 0.6rem;
+}
+
+
+
+@media (min-width: 576px) { 
+    .fashion-images{
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 1200px) { 
+    .fashion-wrapper{
+        gap: 32px;
+    }
+
+  .icon{
+    padding: 0 40px;
+  }
+  .marmol{
+    padding: 0 34%;
+  }
+}

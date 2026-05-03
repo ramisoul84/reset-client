@@ -1,0 +1,33 @@
+#imprint{
+    color: black;
+    padding: 32px;
+}
+
+.home{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.home:hover{
+    text-decoration: underline;
+}
+
+.imprint-header{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.article{
+    margin: 32px 0;
+}
+
+.imprint-title{
+    font-weight: 700;
+    margin-bottom: 16px;
+}

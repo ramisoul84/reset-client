@@ -1,0 +1,47 @@
+<footer>
+    <img class="az" src="assets/images/sections/az_1600.jpg" alt="a-z image" data-aos="fade-up" routerLink="/festival-a-z">
+
+    <section class="footer" data-aos="fade-up">
+            <p class="see" >SEE YOU ON DJERBA ISLAND</p>
+            <ng-lottie
+                class="wave"
+                [options]="wavesOptions"
+            />  
+        <div class="footer-form" >
+            <div class="msg-wrapper">
+                <div *ngIf="isMessageOpen" class="message">
+                    {{message}}
+                </div>
+            </div>
+
+            <p >Subscribe to our mailing list</p>
+            <form [formGroup]="registerForm">
+                <div class="form-wrapper">  
+                    <div  class="wrapper">
+                        <input class="text hover-target" id="email" formControlName="email" type="email" placeholder="Email*" autocomplete="off" data-circle-size="60" data-text="EMAIL"> 
+                        <input class="name text hover-target" id="name" formControlName="name" type="text" placeholder="Name" autocomplete="off" data-circle-size="60" data-text="NAME">
+                    </div>
+                    <button class="join hover-target" [disabled]="registerForm.invalid" (click)="onSubmit()"  data-circle-size="160" data-text="JOIN MAILLING LIST">SUBSCRIBE</button>
+
+                </div>
+
+                <div class="btns">
+                    <a  class="btn" href="https://www.instagram.com/reset.festival_official/" target="_blank">
+                       <img src="assets/images/insta.jpg" alt=""  class="hover-target" data-circle-size="160" data-text="reset.festival_official">
+                    </a>
+                    <a  class="btn location hover-target" href="https://www.google.com/maps/@33.7956382,10.8608769,11.3z?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" data-circle-size="160" data-text="DJERBA LOCATION">
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                    </a>
+                </div>
+              </form>
+           
+        </div>
+        <div class="actions">
+            <a routerLink="/imprint">Imprint</a>
+            <a routerLink="/ticket-terms">Ticket Terms & Conditions</a>
+          </div>
+    </section>
+
+</footer>

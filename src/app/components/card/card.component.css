@@ -1,0 +1,52 @@
+
+.card {
+   width: 100%;
+  overflow: hidden;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top: 2px solid white;
+    padding:  8px;
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari/Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    
+  }
+  
+  .card-header-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .card-header-icon {
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .card-header-icon.expanded{
+    transform: rotate(45deg);
+  }
+  
+  .card-body {
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  /* Animation states */
+  .card-body.collapsed {
+    display: none;
+  }
+  
+  /* Rotate the icon when expanded */
+  .expanded .card-header-icon {
+    transform: rotate(45deg);
+  }

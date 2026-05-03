@@ -1,0 +1,39 @@
+<div id="fashion">
+    <app-section-picture
+        id="fashion-img"
+        [src]="'assets/images/sections/fashion.png'"
+        [src_600]="'assets/images/sections/fashion_600.png'"
+        [rightBottom]="'assets/images/decorative/fashion.svg'">
+    </app-section-picture>
+    <section>
+        <p class="title" data-aos="fade-up">Wear Your Soul: The Art of Festival Fashion</p>
+        <article class="fashion-wrapper" data-aos="fade-up">
+            <div class="fashion-images" routerLink="/fashion"> 
+                <app-slider [items]="fashion" [slider]="true"></app-slider>
+                <svg *ngIf="isMobile" xmlns="http://www.w3.org/2000/svg"  class="fullscreen" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707m0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707m-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707"/>
+                  </svg>
+            </div>
+            <p  class="text">
+                Fashion is more than just clothing: it’s a powerful form of self-expression. Rooted in sustainability and culture, every piece reflects individuality, freedom, and creativity. At RE:SET, Tunisian craftsmanship is blended with the art of international upcycling artistry. The fashion shall invite you to connect with your essence and the energy of the festival. Step into a world where your style becomes an extension of your soul; bold, creative, and unapologetically you.
+        </article>
+        <div class="partners" >
+            <p class="title" data-aos="fade-up">OUR PARTNERS</p>
+            <div class="icons">
+                <a href="https://www.instagram.com/salahbarka/?hl=en" target="_blank" data-aos="fade-up">
+                    <img class="icon hover-target" src="assets/images/partners/f1.png" data-circle-size="100" data-text="OPEN LINK">
+                </a>
+                <a href="https://www.instagram.com/lenavoutta/?hl=en" target="_blank" data-aos="fade-up" data-aos-duration="500">
+                    <img class="icon hover-target"  src="assets/images/partners/f2.png" data-circle-size="100" data-text="OPEN LINK">
+                </a>
+                <a href="https://www.instagram.com/houseofmarmol/?hl=en" target="_blank" data-aos="fade-up" data-aos-duration="1000">
+                    <img class="marmol hover-target" src="assets/images/partners/f3.png" data-circle-size="100" data-text="OPEN LINK">
+                </a>
+                <a href="https://www.instagram.com/vainver_official/" target="_blank" data-aos="fade-up" data-aos-duration="1500">
+                    <img class="icon hover-target"  src="assets/images/partners/f4.png" data-circle-size="100" data-text="OPEN LINK">
+                </a>
+            </div>
+            <p class="more" data-aos="fade-right"  data-aos-duration="2000">and many more...</p>
+        </div>
+    </section>   
+ </div>

@@ -1,0 +1,45 @@
+<div id="admin">
+  <div class="home" routerLink="/home"> [ HOME ]</div>
+  <form [formGroup]="loginForm"   *ngIf="!isLoggedin">
+      <input  id="email" formControlName="email" type="email" placeholder="Email" autocomplete="on" > 
+      <input  id="password" formControlName="password" type="password" placeholder="Password" autocomplete="off" >
+      <button class="submit" [disabled]="loginForm.invalid" (click)="onSubmit()" >LOGIN</button>
+  </form>
+
+  <div *ngIf="isLoggedin">
+
+  <button class="logout" (click)="logout()">[ LOGOUT ]</button>
+  <div class="cards">
+    <div class="card">
+      <p class="card-title">Registed Users</p> 
+      <span class="card-value">{{total}}</span>
+    </div>
+  </div>
+
+  <div class="pages">
+    <p>PAGES: </p>
+    <p *ngFor="let pageNum of getPages()let i = index" class="page" (click)="selectPage(i+1)" [ngClass]="{selected:selectedPage===i+1}">{{i+1}}</p>
+  </div>
+  <table class="table">
+      <thead>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Registered at</th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let client of clients">
+              <td class="name">{{ client.name }}</td>
+              <td class="email">{{ client.email }}</td>
+              <td class="date">
+                   {{ client.CreatedAt | date: 'MM/dd/yyyy' }}
+              </td>
+          </tr>
+      </tbody>
+
+     
+     
+  </table>
+  <button (click)="downloadAllClients()" class="download">Download as CSV File</button>
+  </div>
+
+</div>
