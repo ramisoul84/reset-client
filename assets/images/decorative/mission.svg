@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 174.27 205.69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <path class="cls-1" d="M105.42,82.61c-45.11,0-81.48,11.73-98.65,17.61-2.59.88-2.59,4.54,0,5.42,17.17,5.87,53.54,17.61,98.65,17.61,44.62,0,61.73-11.07,67.64-17.3,1.6-1.69,1.6-4.35,0-6.04-5.91-6.23-23.02-17.3-67.64-17.3Z"/>
+    <g>
+      <path class="cls-1" d="M59.02,131.72c-21.06-6.29-39.1-16.63-47.27-21.73-.77-.48-1.59.31-.99.94,9.07,9.54,33.47,33.41,56.34,40.24,21.79,6.5,35.94-4.34,41.54-10,1.09-1.1-.04-2.92-1.78-2.88-8.17.21-26.57-.23-47.84-6.57Z"/>
+      <path class="cls-1" d="M58.73,161.94C31.6,144.44,11.11,121.35,2.06,110.22c-.85-1.05-2.49-.05-1.96,1.2,7.91,18.68,30.17,66.04,59.63,85.03,28.06,18.1,54.62,5.27,65.88-2.04,2.19-1.42,1.56-4.78-1-5.31-11.98-2.47-38.48-9.5-65.88-27.17Z"/>
+    </g>
+    <image width="42" height="58" transform="translate(10.17 148.44)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA6CAYAAADGFcvAAAAACXBIWXMAAAsSAAALEgHS3X78AAABJUlEQVRogd2Xyw7DIAwEF/7/n+kplarSEPD6sfUph0gMYxsMAGCMMVA8ugIkAPTrozpwX/9SIzRBK6df0yhQ12pvrbVsiCehm3qgZvq1jQL1rOobBWpZ7QCgcEQtU1/F6n/U6BUVrMoY/WiilbnMppMxugWaWavbRrNgZVL/1RxPjUU3lozRY9DoWjUZjYQ1pz4KVqZGp517Ysn7FKAZ9S4Bauo9YaegFZ8m9GbysurS9R6wtym2LsgsIddzlGl2uWPGYgyzITcTZbNRCwE2s6F3vWXDj3dIbYwDsynT09HQ473A7eIbZrdTkAWbDvoGWQAfHRcZsMfnWjSs+WpzmZQmsJTpJsIubQzzhqU+OTzfTC5vo/AJ3xqhgzMrTJNTwVfxz3gBlceoAsjrRGUAAAAASUVORK5CYII="/>
+    <path class="cls-1" d="M105.42,123.08c-45.11,0-81.48-11.73-98.65-17.61-2.59-.88-2.59-4.54,0-5.42,17.17-5.87,53.54-17.61,98.65-17.61,44.62,0,61.73,11.07,67.64,17.3,1.6,1.69,1.6,4.35,0,6.04-5.91,6.23-23.02,17.3-67.64,17.3Z"/>
+    <path class="cls-1" d="M59.02,73.97c-21.06,6.29-39.1,16.63-47.27,21.73-.77.48-1.59-.31-.99-.94,9.07-9.54,33.47-33.41,56.34-40.24,21.79-6.5,35.94,4.34,41.54,10,1.09,1.1-.04,2.92-1.78,2.88-8.17-.21-26.57.23-47.84,6.57Z"/>
+    <path class="cls-1" d="M58.73,43.75C31.6,61.25,11.11,84.34,2.06,95.47c-.85,1.05-2.49.05-1.96-1.2C8.01,75.59,30.27,28.23,59.73,9.24c28.06-18.1,54.62-5.27,65.88,2.04,2.19,1.42,1.56,4.78-1,5.31-11.98,2.47-38.48,9.5-65.88,27.17Z"/>
+    <image width="42" height="57" transform="translate(10.17 -.56)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA5CAYAAABAgbluAAAACXBIWXMAAAsSAAALEgHS3X78AAABKUlEQVRogeXY226DMBBAwaH//8/0JUFp1BJs7/pC9zGKzOgYiBUWma3HRfZ931vXSIVGAJ8TDo3EvU4oNAtJIDSt5LZtBEBTKz6QNEKzK/74rHaxnkgqob2RVEAzkGfA4zslC45Cwlf0hUvmKpKCotE1S5AMKlqK5GLR0MNFBZLORWuRXCgaVbMFSaeirUg+FA05mQcgSS4aheSkaGvNSCRJRaORJEAzkPyx9bXbnoVk8KGkZMKgmTX5Zetrtj0bSUDRHkj+yz3aqyYN0J5I3qCZ/3q0TlXR3jWpgI5ActenflRNFip6FPr0xI+syUJFL0FH1+RORWeoyQM680/nc06LzlKTO9yjM9Vk9aKz1WShotv7q2nGmixUdE3orNvOqkVnngM687bDN/RNWJmvY72OAAAAAElFTkSuQmCC"/>
+  </g>
+</svg>
